@@ -88,7 +88,7 @@ export default function Home() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
               href="#contact"
-              className="inline-flex min-h-12 items-center justify-center rounded-full bg-stone-950 px-7 text-sm font-medium text-white transition hover:bg-stone-800"
+              className="inline-flex min-h-12 min-w-48 items-center justify-center whitespace-nowrap rounded-full bg-stone-950 px-7 text-sm font-medium text-white transition hover:bg-stone-800"
             >
               Get launch updates
             </a>
