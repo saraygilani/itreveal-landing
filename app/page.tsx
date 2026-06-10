@@ -6,17 +6,17 @@ const howItWorks = [
   {
     title: "Analyze one city",
     description:
-      "Explore how a single place lines up with the life you want to build, with a clearer picture of what fits and what may feel off.",
+      "Explore how a single place lines up with your routines, preferences, and priorities, whether you are moving, traveling, or simply curious.",
   },
   {
     title: "Compare two cities",
     description:
-      "Put two options side by side so you can see meaningful differences instead of relying on guesswork or scattered research.",
+      "Put two options side by side so you can spot meaningful differences instead of relying on guesswork or scattered research.",
   },
   {
     title: "Get personalized recommendations",
     description:
-      "Use your priorities to surface places that may suit your situation better, whether you are relocating or rethinking lifestyle trade-offs.",
+      "Use your priorities to surface places that may suit your situation better, from a major move to a short trip to a what-if lifestyle comparison.",
   },
 ];
 
@@ -55,7 +55,7 @@ export default function Home() {
       <header className="flex items-center justify-between py-4">
         <Link
           href="/"
-          className="text-lg font-semibold tracking-[0.18em] text-stone-900 uppercase"
+          className="text-lg font-semibold tracking-[0.04em] text-stone-900"
         >
           ItReveal
         </Link>
@@ -75,24 +75,38 @@ export default function Home() {
             Coming soon on mobile.
           </p>
           <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-stone-950 sm:text-5xl lg:text-6xl">
-            See how well a place fits your life before you move.
+            See how well a place fits your life{" "}
+            <span className="font-normal italic text-stone-700">
+              before you move.
+            </span>
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-8 text-stone-650 sm:text-lg">
-            ItReveal helps you simulate cities, compare options, and
-            understand trade-offs before making relocation or lifestyle
-            decisions.
+            ItReveal helps you simulate over 100+ cities, compare options, and
+            understand how a place may feel for a specific person before making
+            relocation, travel, or lifestyle decisions.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
               href="#contact"
-              className="inline-flex min-h-12 items-center justify-center rounded-full bg-stone-950 px-6 text-sm font-medium text-white transition hover:bg-stone-800"
+              className="inline-flex min-h-12 items-center justify-center rounded-full bg-stone-950 px-7 text-sm font-medium text-white transition hover:bg-stone-800"
             >
               Get launch updates
             </a>
-            <p className="text-sm leading-6 text-stone-500">
-              A simple pre-launch site for people who want honest updates, not
-              hype.
+            <p className="max-w-md text-sm leading-6 text-stone-500">
+              Built to reveal what a city might actually feel like for you, not
+              just how it ranks on paper.
             </p>
+          </div>
+          <div className="mt-8 flex flex-wrap gap-3 text-sm text-stone-600">
+            <span className="rounded-full border border-stone-200 bg-stone-50 px-3 py-2">
+              100+ cities
+            </span>
+            <span className="rounded-full border border-stone-200 bg-stone-50 px-3 py-2">
+              Personalized simulation
+            </span>
+            <span className="rounded-full border border-stone-200 bg-stone-50 px-3 py-2">
+              Relocation, travel, and lifestyle planning
+            </span>
           </div>
         </div>
 
@@ -106,8 +120,8 @@ export default function Home() {
                 Simulate cities
               </h2>
               <p className="mt-2 text-sm leading-7 text-stone-600">
-                Turn broad life goals into a more concrete way to evaluate how
-                a place may fit.
+                Turn your preferences into a more concrete simulation of how a
+                place may fit your specific situation.
               </p>
             </div>
             <div>
@@ -116,16 +130,16 @@ export default function Home() {
               </h2>
               <p className="mt-2 text-sm leading-7 text-stone-600">
                 See differences between cities without manually stitching
-                together advice, rankings, and forum posts.
+                together advice, rankings, reviews, and forum posts.
               </p>
             </div>
             <div>
               <h2 className="text-base font-semibold text-stone-900">
-                Understand trade-offs
+                Make it personal
               </h2>
               <p className="mt-2 text-sm leading-7 text-stone-600">
-                Make decisions with a clearer sense of what you gain, what you
-                give up, and what needs closer verification.
+                Explore what the same city might look like through different
+                priorities, goals, and trade-offs.
               </p>
             </div>
           </div>
@@ -138,16 +152,16 @@ export default function Home() {
             What ItReveal Does
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-stone-950">
-            A calmer way to think through a big move.
+            A more personal way to evaluate a place.
           </h2>
         </div>
         <div className="rounded-[1.5rem] border border-stone-200/80 bg-white/80 p-6 lg:col-span-2">
           <p className="text-base leading-8 text-stone-650">
             ItReveal is being built to help people evaluate places more
-            deliberately. Instead of treating relocation as a list of isolated
-            facts, it focuses on fit: how a city aligns with your priorities,
-            what trade-offs may matter, and where more research is still worth
-            doing.
+            deliberately. Instead of treating a city as a generic ranking or a
+            list of facts, it focuses on personal fit: how a place aligns with
+            your priorities, where trade-offs may matter, and how the same city
+            can look different depending on the person using it.
           </p>
         </div>
       </section>
