@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f6f2eb;
+  --foreground: #201a14;
+  --surface: #fffdf9;
+  --surface-strong: #f2ece2;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --font-sans: "Avenir Next", "Segoe UI", sans-serif;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia,
+    serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.75), transparent 42%),
+    linear-gradient(180deg, #faf7f1 0%, #f6f2eb 48%, #f3eee5 100%);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+a,
+button,
+input,
+textarea {
+  transition-property: color, background-color, border-color, opacity, box-shadow,
+    transform;
+  transition-duration: 150ms;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia,
+    serif;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
 }
