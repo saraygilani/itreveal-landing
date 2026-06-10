@@ -20,38 +20,88 @@ export default function PrivacyPage() {
           Privacy Policy
         </p>
         <h1 className="mt-3 text-4xl font-semibold tracking-tight text-stone-950">
-          A simple pre-launch privacy policy.
+          How ItReveal handles information.
         </h1>
-        <div className="mt-8 space-y-6 text-sm leading-7 text-stone-650">
-          <p>
-            This page describes, at a high level, how ItReveal currently expects
-            to handle information. It is meant to be honest and useful during
-            the pre-launch stage, not a claim of legal completeness.
-          </p>
-          <p>
-            If you submit the website contact form, ItReveal may collect the
-            name you choose to share, your email address, and the message you
-            send so the founder can respond or keep track of launch interest.
-          </p>
-          <p>
-            When the app is available, ItReveal may collect account information,
-            simulation inputs and outputs, and usage data needed to operate,
-            improve, and secure the product.
-          </p>
-          <p>
-            Authentication for the app may be handled through third-party
-            providers. If that happens, those providers may process certain
-            information according to their own terms and privacy policies.
-          </p>
-          <p>
-            A public contact email is not listed yet. For now, website messages
-            are sent privately through the form on the homepage.
-          </p>
-          <p>
-            This policy may change as the product evolves toward launch. If you
-            continue using the website or future app after changes are posted,
-            that use may be treated as acceptance of the updated policy.
-          </p>
+        <div className="mt-8 space-y-8 text-sm leading-7 text-stone-650">
+          <section>
+            <h2 className="text-xl font-semibold text-stone-900">
+              1. Information we collect
+            </h2>
+            <p className="mt-3">
+              ItReveal may collect information you provide directly, including
+              your name, email address, and any message you send through the
+              website contact form.
+            </p>
+            <p className="mt-3">
+              When the app is available, ItReveal may also collect account
+              details, simulation inputs and outputs, and usage information
+              needed to operate and improve the product.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-stone-900">
+              2. How we use information
+            </h2>
+            <p className="mt-3">
+              Information may be used to respond to messages, provide launch
+              updates you request, operate the website and app, improve product
+              performance, and help keep the service reliable and secure.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-stone-900">
+              3. Authentication and third-party services
+            </h2>
+            <p className="mt-3">
+              Some parts of ItReveal may rely on third-party services, including
+              authentication, hosting, analytics, or email delivery tools. If
+              authentication is offered, those providers may process certain
+              information according to their own terms and privacy policies.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-stone-900">
+              4. Contact form submissions
+            </h2>
+            <p className="mt-3">
+              Messages sent through the contact form are used to respond to your
+              inquiry or keep track of requested updates. Submissions may
+              include your name, email address, message content, and the time
+              the message was sent.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-stone-900">
+              5. Data security
+            </h2>
+            <p className="mt-3">
+              ItReveal uses reasonable steps to protect information, but no
+              system can guarantee absolute security. You should avoid sending
+              sensitive information through the contact form unless necessary.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-stone-900">
+              6. Changes to this policy
+            </h2>
+            <p className="mt-3">
+              This policy may be updated from time to time as ItReveal evolves.
+              Updated versions will be posted on this page.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-stone-900">7. Contact</h2>
+            <p className="mt-3">
+              If you have questions, use the contact form on the homepage and
+              we&apos;ll get back to you as soon as possible.
+            </p>
+          </section>
         </div>
       </div>
     </main>

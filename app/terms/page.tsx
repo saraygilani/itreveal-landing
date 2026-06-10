@@ -20,36 +20,81 @@ export default function TermsPage() {
           Terms of Service
         </p>
         <h1 className="mt-3 text-4xl font-semibold tracking-tight text-stone-950">
-          Basic pre-launch terms.
+          Terms for using ItReveal.
         </h1>
-        <div className="mt-8 space-y-6 text-sm leading-7 text-stone-650">
-          <p>
-            ItReveal is being built as an informational and decision-support
-            tool. Its content and outputs are intended to help people think
-            through relocation and lifestyle choices, not to act as a final or
-            authoritative source.
-          </p>
-          <p>
-            ItReveal does not provide legal, financial, immigration, medical,
-            tax, or other professional advice. Important decisions should be
-            verified independently and, when appropriate, reviewed with a
-            qualified professional.
-          </p>
-          <p>
-            The product is currently pre-launch and evolving. Features,
-            availability, calculations, recommendations, and website content may
-            change at any time without notice.
-          </p>
-          <p>
-            By using this website or any future version of the product, you
-            agree to use it responsibly and understand that ItReveal cannot
-            guarantee completeness, accuracy, or suitability for every personal
-            situation.
-          </p>
-          <p>
-            These terms are intentionally simple at this stage and may be
-            updated as the product matures.
-          </p>
+        <div className="mt-8 space-y-8 text-sm leading-7 text-stone-650">
+          <section>
+            <h2 className="text-xl font-semibold text-stone-900">
+              1. Use of ItReveal
+            </h2>
+            <p className="mt-3">
+              ItReveal is provided to help users explore relocation and
+              lifestyle decisions. By using the website or app, you agree to use
+              it lawfully and responsibly.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-stone-900">
+              2. No professional advice
+            </h2>
+            <p className="mt-3">
+              ItReveal is informational and decision-support only. It does not
+              provide legal, financial, immigration, tax, medical, or other
+              professional advice, and it should not be treated as a substitute
+              for qualified guidance.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-stone-900">
+              3. User responsibility
+            </h2>
+            <p className="mt-3">
+              You are responsible for evaluating your own circumstances and
+              verifying important information independently before making
+              decisions based on the website or app.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-stone-900">
+              4. Product changes
+            </h2>
+            <p className="mt-3">
+              ItReveal may update, change, pause, or remove features at any time
+              as the product evolves.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-stone-900">
+              5. Accuracy and availability
+            </h2>
+            <p className="mt-3">
+              ItReveal aims to be useful, but it does not guarantee that all
+              content, recommendations, comparisons, or calculations will always
+              be complete, accurate, or available without interruption.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-stone-900">
+              6. Limitation of liability
+            </h2>
+            <p className="mt-3">
+              To the extent allowed by applicable law, ItReveal is not liable
+              for losses, damages, or decisions resulting from use of the
+              website, app, or related information.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-stone-900">7. Contact</h2>
+            <p className="mt-3">
+              If you have questions, use the contact form on the homepage.
+            </p>
+          </section>
         </div>
       </div>
     </main>
