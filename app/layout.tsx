@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | ItReveal",
   },
   description:
-    "ItReveal helps you simulate cities, compare options, and understand trade-offs before making relocation or lifestyle decisions.",
+    "Find your best city fit with ItReveal. Compare cities and understand how each place matches your unique priorities.",
   manifest: "/site.webmanifest",
   icons: {
     icon: [

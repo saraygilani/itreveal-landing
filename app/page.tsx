@@ -44,9 +44,11 @@ const whatYouSee = [
 ];
 
 export const metadata: Metadata = {
-  title: "Relocation Decisions, Made Clearer",
+  title: {
+    absolute: "ItReveal",
+  },
   description:
-    "See how well a place fits your life before you move. ItReveal helps you simulate cities, compare options, and understand trade-offs.",
+    "Find your best city fit with ItReveal. See how well a place matches your unique priorities before you move, travel, or compare options.",
 };
 
 export default function Home() {
@@ -75,15 +77,12 @@ export default function Home() {
             Coming soon on mobile.
           </p>
           <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-stone-950 sm:text-5xl lg:text-6xl">
-            See how well a place fits your life{" "}
-            <span className="font-normal italic text-stone-700">
-              before you move.
-            </span>
+            ItReveal
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-8 text-stone-650 sm:text-lg">
-            ItReveal helps you simulate over 100+ cities, compare options, and
-            understand how a place may feel for a specific person before making
-            relocation, travel, or lifestyle decisions.
+            Find your best city fit. ItReveal helps you compare 100+ cities and
+            understand how each place may fit your unique priorities before a
+            move, trip, or lifestyle change.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
