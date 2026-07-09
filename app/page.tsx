@@ -55,10 +55,22 @@ const placeStories = [
     description: "See whether a place supports the rhythm you want.",
   },
   {
+    src: "/places/golden-gate-coast.jpg",
+    alt: "The Golden Gate Bridge seen from a sunlit coastal overlook.",
+    title: "Coastal access",
+    description: "Balance nature, mobility, and the pull of a bigger city.",
+  },
+  {
     src: "/places/canal-city.jpg",
     alt: "A warmly lit canal city at blue hour.",
     title: "Urban texture",
     description: "Compare the energy, convenience, and density of city life.",
+  },
+  {
+    src: "/places/stonehenge-sunset.jpg",
+    alt: "Stonehenge at sunset over green grass.",
+    title: "Cultural gravity",
+    description: "Notice the history, identity, and texture behind a place.",
   },
   {
     src: "/places/sunrise-valley.jpg",
@@ -291,14 +303,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto grid w-full max-w-6xl gap-5 px-6 py-16 sm:px-8 lg:grid-cols-3 lg:px-12 lg:py-20">
-        {placeStories.map((story, index) => (
+      <section className="mx-auto grid w-full max-w-6xl gap-5 px-6 py-16 sm:px-8 md:grid-cols-2 lg:grid-cols-4 lg:px-12 lg:py-20">
+        {placeStories.slice(1, 5).map((story, index) => (
           <article
             key={story.title}
             className={
-              index === 2
-                ? "relative min-h-[360px] overflow-hidden bg-stone-900 lg:col-span-2"
-                : "relative min-h-[360px] overflow-hidden bg-stone-900"
+              index === 0
+                ? "relative min-h-[360px] overflow-hidden bg-stone-900 md:col-span-2 lg:col-span-2 lg:row-span-2 lg:min-h-[620px]"
+                : index === 3
+                  ? "relative min-h-[300px] overflow-hidden bg-stone-900 md:col-span-2 lg:col-span-2"
+                  : "relative min-h-[300px] overflow-hidden bg-stone-900"
             }
           >
             <Image
@@ -306,11 +320,15 @@ export default function Home() {
               alt={story.alt}
               fill
               sizes={
-                index === 2
-                  ? "(max-width: 1024px) 100vw, 66vw"
-                  : "(max-width: 1024px) 100vw, 33vw"
+                index === 0 || index === 3
+                  ? "(max-width: 1024px) 100vw, 50vw"
+                  : "(max-width: 1024px) 50vw, 25vw"
               }
-              className="object-cover"
+              className={
+                story.src === "/places/stonehenge-sunset.jpg"
+                  ? "object-cover object-[center_58%]"
+                  : "object-cover"
+              }
             />
             <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(9,14,14,0.68),rgba(9,14,14,0.04)_62%)]" />
             <div className="absolute bottom-0 left-0 p-6 text-white">
@@ -332,11 +350,11 @@ export default function Home() {
           alt="A moonlit waterfront with warm reflections on the water."
           fill
           sizes="100vw"
-          className="object-cover object-[center_60%] opacity-[0.56]"
+          className="object-cover object-[center_60%]"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,10,13,0.92),rgba(7,10,13,0.72)_52%,rgba(7,10,13,0.48))]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,10,13,0.42),rgba(7,10,13,0.2)_54%,rgba(7,10,13,0.08))]" />
         <div className="relative mx-auto grid w-full max-w-6xl gap-10 px-6 sm:px-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:px-12">
-          <div>
+          <div className="bg-black/28 p-5 ring-1 ring-white/10 backdrop-blur-sm sm:p-6">
             <p className="text-sm font-medium tracking-[0.16em] text-stone-300 uppercase">
               Contact / Updates
             </p>
@@ -348,7 +366,7 @@ export default function Home() {
               site can stay simple without listing a public contact email yet.
             </p>
           </div>
-          <div className="bg-black/30 p-5 ring-1 ring-white/10 backdrop-blur sm:p-6">
+          <div className="bg-black/45 p-5 ring-1 ring-white/15 backdrop-blur-sm sm:p-6">
             <ContactForm />
           </div>
         </div>

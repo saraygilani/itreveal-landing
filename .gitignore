@@ -24,6 +24,8 @@
 .DS_Store
 *.pem
 /User attachment*
+/33195910630_7f9777c021_o.jpg
+/3409068082_bbecd0b7cc_o.jpg*
 
 # debug
 npm-debug.log*
